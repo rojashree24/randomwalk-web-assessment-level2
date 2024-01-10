@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #78cce8;
+}
+
+h1 {
+    margin-top: 47px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    font-size: 40px;
+    cursor: pointer;
+    height: 80px;
+    border-radius: 13%;
+}
+
+.cell:hover{
+    transition: width 2s, height 4s;
+}
+
+#status {
+    margin-bottom: 20px;
+}
+
+#restart {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    text-transform: uppercase;
+    height: 38px;
+    margin-top: 1px;
+}
+
+#restart:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: #04AA6D;
+    /* Green */
+    color: white;
+}
+
+#scoreboard {
+    margin-right: 900px;
+    margin-bottom: 100px;
+    margin-top: -320px;
+    height: 140px;
+    width: 200px;
+    /* border: 2px solid rgb(193, 150, 70) ; */
+    border-radius: 8px;
+    margin-left: 100px;
+}
+
+.score {
+    margin-top: 17px;
+    font-size: 25px;
+}
+
+.player {
+    margin-top: 10px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+}
+
+/* .player2 {
+            margin-top: 100px;
+            font-size: 17px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+    
+        } */
